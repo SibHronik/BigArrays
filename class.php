@@ -20,4 +20,4 @@ class ArraysMergerClass
         $time = microtime(true) - $start;
         echo sprintf("%f", $time);
     }
-}
+} 
