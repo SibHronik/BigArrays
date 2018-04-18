@@ -5,7 +5,7 @@ class ArraysMergerClass
 {
     public static function inputArrays ($array1, $array2)
     {
-        
+        $start = microtime(true);   
         $newUsers = [];
         $updateUsers = [];
         foreach ($array1 as $arrayKey1 => $arrayValue1) {
@@ -17,5 +17,7 @@ class ArraysMergerClass
             }
         }
         $newUsers = $array2;
+        $time = microtime(true) - $start;
+        echo sprintf("%f", $time);
     }
 }
